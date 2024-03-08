@@ -1,0 +1,2148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2477237272613681460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2477237272613681462}
+  - component: {fileID: 2477237272613681459}
+  - component: {fileID: 2477237272613681456}
+  - component: {fileID: 2477237272613681457}
+  m_Layer: 0
+  m_Name: MapDisplayer2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2477237272613681462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477237272613681460}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.6213017, z: 0}
+  m_LocalScale: {x: 3.3862433, y: 5.6804733, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2477237272956539731}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2477237272613681459
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477237272613681460}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2477237272613681456
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477237272613681460}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2477237272613681457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477237272613681460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4aa024d334b49ec87a000fcdb439c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapPreviewColors:
+  - name: Dirt
+    value: 1
+    color: {r: 0.4245283, g: 0.23717909, b: 0, a: 1}
+  - name: Grassy Dirt
+    value: 2
+    color: {r: 0.1388538, g: 0.49056602, b: 0, a: 1}
+  - name: Clay
+    value: 3
+    color: {r: 0.4811321, g: 0.3107311, b: 0.12028302, a: 1}
+  - name: Sand
+    value: 4
+    color: {r: 0.95518726, g: 1, b: 0.5613208, a: 1}
+  - name: Stone
+    value: 5
+    color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+  - name: Snow
+    value: 6
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - name: Freezing Water
+    value: 7
+    color: {r: 0, g: 0.17778899, b: 0.49056602, a: 1}
+  - name: Dirt Cave
+    value: 8
+    color: {r: 0.16037738, g: 0.08909854, b: 0, a: 1}
+  - name: Loam
+    value: 9
+    color: {r: 0.24705882, g: 0.14901961, b: 0, a: 1}
+  - name: Icetop Snow
+    value: 10
+    color: {r: 0.8254717, g: 1, b: 0.9603065, a: 1}
+  - name: Regular Water
+    value: 11
+    color: {r: 0, g: 0.29403564, b: 0.8113208, a: 1}
+  - name: Dry Grass
+    value: 12
+    color: {r: 0.54631376, g: 0.8117647, b: 0, a: 1}
+  - name: Warm Water
+    value: 13
+    color: {r: 0, g: 1, b: 0.7571974, a: 1}
+  - name: Adobe
+    value: 14
+    color: {r: 1, g: 0.46986848, b: 0.02352941, a: 1}
+  - name: Gravel
+    value: 15
+    color: {r: 0.3037113, g: 0.3301887, b: 0.3058585, a: 1}
+  - name: Hardpan
+    value: 16
+    color: {r: 0.33962262, g: 0.2207191, b: 0.07208972, a: 1}
+  - name: Ruck
+    value: 17
+    color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+  - name: Flowers
+    value: 18
+    color: {r: 1, g: 0.77108335, b: 0, a: 1}
+  - name: Mantle
+    value: 19
+    color: {r: 0.6603774, g: 0.23185423, b: 0.04049486, a: 1}
+  - name: Zinc
+    value: 20
+    color: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
+  - name: Tin
+    value: 21
+    color: {r: 0.5582503, g: 0.6132076, b: 0.5820416, a: 1}
+  - name: Feldspar
+    value: 22
+    color: {r: 0.6981132, g: 0.3837332, b: 0.2799039, a: 1}
+  - name: Calcite
+    value: 23
+    color: {r: 1, g: 0.98021144, b: 0.8066038, a: 1}
+  - name: Lava
+    value: 24
+    color: {r: 1, g: 0.100150526, b: 0, a: 1}
+  - name: Iron
+    value: 25
+    color: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
+  - name: Nickel
+    value: 26
+    color: {r: 0, g: 0.3711408, b: 0.4716981, a: 1}
+  - name: Chromium
+    value: 27
+    color: {r: 1, g: 0.3686278, b: 0, a: 1}
+  - name: Silicon
+    value: 28
+    color: {r: 0.10079497, g: 0.5188679, b: 0, a: 1}
+  - name: Magma
+    value: 29
+    color: {r: 1, g: 0.929772, b: 0.7877358, a: 1}
+  - name: Copper
+    value: 30
+    color: {r: 1, g: 0.5063654, b: 0.2783019, a: 1}
+  - name: Aluminum
+    value: 31
+    color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
+  - name: Titanium
+    value: 32
+    color: {r: 0.2716714, g: 0.3490566, b: 0.33354694, a: 1}
+  - name: Gold
+    value: 33
+    color: {r: 1, g: 0.7713527, b: 0, a: 1}
+  - name: Plutonium
+    value: 34
+    color: {r: 0.5471698, g: 0.4109509, b: 0.3019758, a: 1}
+  - name: Uranium
+    value: 35
+    color: {r: 0.10196066, g: 1, b: 0, a: 1}
+  - name: Thorium
+    value: 36
+    color: {r: 0.5283019, g: 0.22549471, b: 0, a: 1}
+  - name: Talc
+    value: 37
+    color: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
+  - name: Citrine (Sand)
+    value: 38
+    color: {r: 1, g: 0.8883648, b: 0.6650944, a: 1}
+  - name: Sand Cave
+    value: 39
+    color: {r: 0.7169812, g: 0.6327947, b: 0.28746888, a: 1}
+  - name: Ruck Cave
+    value: 40
+    color: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
+  - name: Stone Cave
+    value: 41
+    color: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
+  - name: Hardpan Cave
+    value: 42
+    color: {r: 0.2735849, g: 0.17560081, b: 0.05549128, a: 1}
+  - name: Sulphur (Sand)
+    value: 43
+    color: {r: 0.9241657, g: 1, b: 0, a: 1}
+  - name: Zircon (Sand)
+    value: 44
+    color: {r: 1, g: 0.63775414, b: 0.4669811, a: 1}
+  - name: Cactus Spawn
+    value: 45
+    color: {r: 0.048065513, g: 0.3962264, b: 0, a: 1}
+  - name: Tree Spawn
+    value: 46
+    color: {r: 0.2924528, g: 0.19111101, b: 0.14208794, a: 1}
+  - name: Cherry Bush
+    value: 47
+    color: {r: 0, g: 0.8584906, b: 0.061337512, a: 1}
+  - name: Leafless Bush
+    value: 48
+    color: {r: 0.4433962, g: 0.34788477, b: 0.3032663, a: 1}
+  - name: Permafrost
+    value: 49
+    color: {r: 0.3019608, g: 0.44313726, b: 0.41877013, a: 1}
+  - name: Snow Cave
+    value: 50
+    color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  - name: Kyanite (snow)
+    value: 51
+    color: {r: 0.7311321, g: 0.85084796, b: 1, a: 1}
+  - name: Limestone
+    value: 52
+    color: {r: 0.954244, g: 1, b: 0.7607843, a: 1}
+  - name: Osmium (snow)
+    value: 53
+    color: {r: 0.4198113, g: 0.61807346, b: 1, a: 1}
+  - name: Cadmium (snow)
+    value: 54
+    color: {r: 0.36044857, g: 0.43129352, b: 0.5660378, a: 1}
+  - name: Snowy Grass
+    value: 55
+    color: {r: 0.53555536, g: 0.7830189, b: 0.7475224, a: 1}
+  - name: Pine Tree Spawn
+    value: 56
+    color: {r: 0.035910048, g: 0.2264151, b: 0, a: 1}
+  - name: Tallgrass
+    value: 57
+    color: {r: 0.41879413, g: 0.4811321, b: 0.33361518, a: 1}
+  - name: Kyanite (dirt)
+    value: 58
+    color: {r: 0.7311321, g: 0.85084796, b: 1, a: 1}
+  - name: Osmium (dirt)
+    value: 59
+    color: {r: 0.41960785, g: 0.61960787, b: 1, a: 1}
+  - name: Cadium (dirt)
+    value: 60
+    color: {r: 0.36078432, g: 0.43137255, b: 0.5647059, a: 1}
+  - name: Dead Grass
+    value: 61
+    color: {r: 0.94586194, g: 1, b: 0.5235849, a: 1}
+  - name: Rosemary Bush
+    value: 62
+    color: {r: 0.3504361, g: 0.5943396, b: 0.42777133, a: 1}
+  - name: Stonepine Tree Spawn
+    value: 63
+    color: {r: 0.6320754, g: 0.5274164, b: 0.28920433, a: 1}
+  - name: Mulch
+    value: 64
+    color: {r: 0.6320754, g: 0.5283499, b: 0.40250087, a: 1}
+  - name: Citrine (Dirt)
+    value: 65
+    color: {r: 1, g: 0.8883648, b: 0.6650944, a: 1}
+  - name: Zircon (Sand)
+    value: 66
+    color: {r: 1, g: 0.63775414, b: 0.4669811, a: 1}
+  - name: Sulphur (Dirt)
+    value: 67
+    color: {r: 0.9241657, g: 1, b: 0, a: 1}
+  - name: Black Granite
+    value: 68
+    color: {r: 0.20016019, g: 0.20316838, b: 0.24528301, a: 1}
+  - name: Black Granite Cave
+    value: 69
+    color: {r: 0.13333334, g: 0.13333334, b: 0.16078432, a: 1}
+  - name: Graphite
+    value: 70
+    color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+  - name: Black Quartz
+    value: 71
+    color: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  - name: Jasper
+    value: 72
+    color: {r: 0.6037736, g: 0, b: 0, a: 1}
+  - name: Amythyst
+    value: 73
+    color: {r: 0.55045414, g: 0, b: 1, a: 1}
+  - name: Diamond
+    value: 74
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - name: Slate
+    value: 75
+    color: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  - name: Sapphire
+    value: 76
+    color: {r: 0, g: 0.15447235, b: 1, a: 1}
+  - name: Emerald
+    value: 77
+    color: {r: 0.066875525, g: 0.6886792, b: 0, a: 1}
+  - name: Ruby
+    value: 78
+    color: {r: 1, g: 0.09024531, b: 0, a: 1}
+  - name: Bauxite
+    value: 79
+    color: {r: 0.77254903, g: 0.23373094, b: 0, a: 1}
+  - name: Potash
+    value: 80
+    color: {r: 0.7735849, g: 0.11693122, b: 0, a: 1}
+  - name: Magnesium
+    value: 81
+    color: {r: 1, g: 0.36320752, b: 0.67428076, a: 1}
+  - name: Neon
+    value: 82
+    color: {r: 1, g: 0.0982824, b: 0, a: 1}
+  - name: Adobe Cave
+    value: 83
+    color: {r: 0.7924528, g: 0.36280972, b: 0, a: 1}
+  - name: Golden Cactus Spawn
+    value: 84
+    color: {r: 0.7921569, g: 0.6021934, b: 0, a: 1}
+  - name: Sea Shell Spawn
+    value: 85
+    color: {r: 0.9528302, g: 0.3707413, b: 0.26517445, a: 1}
+  - name: Pumice
+    value: 86
+    color: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+  - name: Coral Spawn
+    value: 87
+    color: {r: 1, g: 0.4764151, b: 0.66835934, a: 1}
+  - name: Pyrite
+    value: 88
+    color: {r: 1, g: 0.80576324, b: 0, a: 1}
+  - name: Seaweed Spawn
+    value: 89
+    color: {r: 0.021005752, g: 0.3962264, b: 0, a: 1}
+  - name: Frostsand
+    value: 90
+    color: {r: 0.6745283, g: 0.9698637, b: 1, a: 1}
+  - name: Dry Ice
+    value: 91
+    color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
+  - name: Frost Fossil
+    value: 93
+    color: {r: 0, g: 0.5188679, b: 0.4708103, a: 1}
+  - name: Frigid Spike Spawn
+    value: 94
+    color: {r: 0, g: 0.7830205, b: 1, a: 1}
+  - name: Frost Snow Cave
+    value: 95
+    color: {r: 0.40156642, g: 0.58428377, b: 0.6037736, a: 1}
+  - name: Lead
+    value: 96
+    color: {r: 0, g: 0.22169814, b: 0.24528301, a: 1}
+--- !u!1 &2477237272956539729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2477237272956539731}
+  - component: {fileID: 2477237272956539730}
+  m_Layer: 0
+  m_Name: GenPrimaryCore [Earth]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2477237272956539731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477237272956539729}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5.67, y: 3.38, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2477237272613681462}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2477237272956539730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477237272956539729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565982f8a5dbf6b409ba3318574a32a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewDisplayOnStart: 0
+  previewOffset: {x: 0, y: 0}
+  forPlanetID: earth
+  seed: ya
+  width: 192
+  height: 192
+  biomeScale: 105
+  biomeBlend: 51
+  biomeBlendCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0.001745776
+      tangentMode: 1
+      weightedMode: 3
+      inWeight: 0
+      outWeight: 0.49583334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.004803939
+      outSlope: -0.004803939
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.5083333
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  waterLevel: 1907
+  liquidValues: 070000000d0000000b000000
+  bottomLevel: -52
+  biomes:
+  - name: Arctic Ocean
+    biomeID: 0
+    mainValue: 90
+    waterValue: 7
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.03
+      amplitude: 15.01
+      offset: {x: 794.5, y: 64.15}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.13
+      amplitude: 4.7
+      offset: {x: 794.5, y: 64.15}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Frigid Spike Spawn
+      use: 1
+      value: 94
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.831
+        amplitude: 0.82
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 1798
+    biomeOffset: -2230
+  - name: Arctic Beach
+    biomeID: 13
+    mainValue: 90
+    waterValue: 7
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.03
+      amplitude: 15.01
+      offset: {x: 794.5, y: 64.15}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.063
+      amplitude: 4.7
+      offset: {x: 794.5, y: 64.15}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Frost Fossil Spawn
+      use: 1
+      value: 93
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.8
+        amplitude: 0.73
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 1922
+    biomeOffset: -2230
+  - name: Snowlands
+    biomeID: 1
+    mainValue: 6
+    waterValue: 13
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.009
+      amplitude: 4.1
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.0278
+      amplitude: 4.7
+      offset: {x: 40, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.063
+      amplitude: 7.6
+      offset: {x: 0, y: 0}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Leafless Bushes
+      use: 1
+      value: 48
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.8
+        amplitude: 0.73
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 1925
+    biomeOffset: 0
+  - name: Snowy Forest
+    biomeID: 2
+    mainValue: 1
+    waterValue: 11
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.009
+      amplitude: 69.62
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.0278
+      amplitude: 34.6
+      offset: {x: 40, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.063
+      amplitude: 9.8
+      offset: {x: 0, y: 0}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Leafless Bushes
+      use: 1
+      value: 48
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.772
+        amplitude: 0.65
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    - name: Pine Tree Spawns
+      use: 1
+      value: 56
+      onlyPositivePerlins: 0
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.828
+        amplitude: 0.79
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 2000
+    biomeOffset: 0
+  - name: Mountains
+    biomeID: 3
+    mainValue: 5
+    waterValue: 11
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.01
+      amplitude: 170.76
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.133
+      amplitude: 7.1
+      offset: {x: 0, y: 0}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: SnowCaps
+      use: 1
+      value: 6
+      onlyPositivePerlins: 1
+      range: {x: -14, y: 2}
+      feather: 6.05
+      featherSlope: 0.26
+      featherType: 1
+      constantFeatherRange: {x: -50, y: 0}
+      fadeType: 0
+      sheetOctaves: []
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    - name: Nothing
+      use: 1
+      value: 0
+      onlyPositivePerlins: 1
+      range: {x: 2, y: 14}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves: []
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 2085
+    biomeOffset: 0
+  - name: Regular Ocean
+    biomeID: 4
+    mainValue: 4
+    waterValue: 11
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.03
+      amplitude: 15.01
+      offset: {x: 794.5, y: 64.15}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.13
+      amplitude: 4.7
+      offset: {x: 794.5, y: 64.15}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Seaweed Spawn
+      use: 1
+      value: 89
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.831
+        amplitude: 1.09
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 1820
+    biomeOffset: -2230
+  - name: Regular Beach
+    biomeID: 12
+    mainValue: 4
+    waterValue: 11
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.03
+      amplitude: 15.01
+      offset: {x: 794.5, y: 64.15}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.063
+      amplitude: 4.7
+      offset: {x: 794.5, y: 64.15}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Seashell Spawn
+      use: 1
+      value: 85
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.8
+        amplitude: 0.73
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 1923
+    biomeOffset: -2230
+  - name: Praries
+    biomeID: 5
+    mainValue: 1
+    waterValue: 13
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.009
+      amplitude: 4.1
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.0278
+      amplitude: 4.7
+      offset: {x: 40, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.063
+      amplitude: 7.6
+      offset: {x: 0, y: 0}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Leafless Bushes
+      use: 1
+      value: 57
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.8
+        amplitude: 1.13
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 1925
+    biomeOffset: 0
+  - name: Forest
+    biomeID: 6
+    mainValue: 1
+    waterValue: 11
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.009
+      amplitude: 69.62
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.0278
+      amplitude: 34.6
+      offset: {x: 40, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.063
+      amplitude: 9.8
+      offset: {x: 0, y: 0}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Tree Spawns
+      use: 1
+      value: 46
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.828
+        amplitude: 0.79
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    - name: Bushes
+      use: 1
+      value: 47
+      onlyPositivePerlins: 0
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.772
+        amplitude: 0.65
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 2000
+    biomeOffset: 0
+  - name: Rockies
+    biomeID: 7
+    mainValue: 68
+    waterValue: 11
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.01
+      amplitude: 105.03
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.133
+      amplitude: 7.1
+      offset: {x: 0, y: 0}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Nothing
+      use: 1
+      value: 0
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves: []
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 2039
+    biomeOffset: 0
+  - name: Tropical Ocean
+    biomeID: 8
+    mainValue: 4
+    waterValue: 13
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.03
+      amplitude: 15.01
+      offset: {x: 794.5, y: 64.15}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.13
+      amplitude: 4.7
+      offset: {x: 794.5, y: 64.15}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Coral Spawn
+      use: 1
+      value: 87
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.8
+        amplitude: 0.73
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 1880
+    biomeOffset: -2230
+  - name: Tropical Beach
+    biomeID: 14
+    mainValue: 4
+    waterValue: 13
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.026
+      amplitude: 7.95
+      offset: {x: 794.5, y: 64.15}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Seashell Spawn
+      use: 1
+      value: 85
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.8
+        amplitude: 0.73
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 1922
+    biomeOffset: -2230
+  - name: Desert
+    biomeID: 9
+    mainValue: 4
+    waterValue: 13
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.009
+      amplitude: 4.1
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.0278
+      amplitude: 4.7
+      offset: {x: 40, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.063
+      amplitude: 7.6
+      offset: {x: 0, y: 0}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Cactus Spawns
+      use: 1
+      value: 45
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.8
+        amplitude: 0.73
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 1925
+    biomeOffset: 0
+  - name: Mediterranean
+    biomeID: 10
+    mainValue: 1
+    waterValue: 11
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.009
+      amplitude: 69.62
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.0278
+      amplitude: 34.6
+      offset: {x: 40, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.063
+      amplitude: 9.8
+      offset: {x: 0, y: 0}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Stonepine Tree Spawns
+      use: 1
+      value: 63
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.828
+        amplitude: 0.67
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    - name: Rosemary Bushes
+      use: 1
+      value: 62
+      onlyPositivePerlins: 0
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.804
+        amplitude: 0.81
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 2000
+    biomeOffset: 0
+  - name: Plats
+    biomeID: 11
+    mainValue: 14
+    waterValue: 11
+    biomeOctaves:
+    - use: 1
+      biomePerlinBehaviour: 2
+      frequency: 0.031
+      amplitude: 74.52
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.046
+      amplitude: 14.57
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.161
+      amplitude: 6.99
+      offset: {x: 0, y: 0}
+    startSheetVarianceAtOctave: 0
+    sheets:
+    - name: Nothing
+      use: 1
+      value: 0
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves: []
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    - name: Golden Cactus Spawns
+      use: 1
+      value: 84
+      onlyPositivePerlins: 1
+      range: {x: 0, y: 0}
+      feather: 0
+      featherSlope: 1
+      featherType: 0
+      constantFeatherRange: {x: 0, y: 0}
+      fadeType: 0
+      sheetOctaves:
+      - use: 1
+        biomePerlinBehaviour: 0
+        frequency: 0.8
+        amplitude: 0.73
+        offset: {x: 0, y: 0}
+      damplitude: 0
+      usePreviousSheetSeed: 0
+      sheetOffset: {x: 0, y: 0}
+      minY: 2147483647
+      maxY: -2147483648
+      preMadeSeed: -1
+    biomeHeight: 2014
+    biomeOffset: 1611
+  globalSheets:
+  - name: Hardpan
+    use: 1
+    value: 16
+    onlyPositivePerlins: 0
+    range: {x: -600, y: -300}
+    feather: 21.49
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves: []
+    damplitude: 0.39
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Stone
+    use: 1
+    value: 5
+    onlyPositivePerlins: 0
+    range: {x: -900, y: -600}
+    feather: 21.49
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves: []
+    damplitude: 0.39
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 1744, y: 0}
+    minY: 55
+    maxY: 191
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Ruck
+    use: 1
+    value: 17
+    onlyPositivePerlins: 0
+    range: {x: -1200, y: -900}
+    feather: 21.49
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves: []
+    damplitude: 0.39
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 1744, y: 0}
+    minY: 0
+    maxY: 149
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Mantle
+    use: 1
+    value: 19
+    onlyPositivePerlins: 0
+    range: {x: -2007, y: -1200}
+    feather: 21.49
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves: []
+    damplitude: 0.39
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 1744, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Layer 1 - Ore A
+    use: 1
+    value: 0
+    onlyPositivePerlins: 0
+    range: {x: -100, y: -10}
+    feather: 200
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.158
+      amplitude: 0.55
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings:
+    - biomeID: 6
+      pairedValue: 20
+    - biomeID: 5
+      pairedValue: 20
+    - biomeID: 9
+      pairedValue: 38
+    - biomeID: 1
+      pairedValue: 51
+    - biomeID: 2
+      pairedValue: 58
+    - biomeID: 10
+      pairedValue: 65
+    - biomeID: 7
+      pairedValue: 71
+    - biomeID: 3
+      pairedValue: 76
+    - biomeID: 11
+      pairedValue: 80
+    - biomeID: 14
+      pairedValue: 4
+    - biomeID: 8
+      pairedValue: 4
+    - biomeID: 12
+      pairedValue: 4
+    - biomeID: 4
+      pairedValue: 4
+    - biomeID: 0
+      pairedValue: 90
+    - biomeID: 13
+      pairedValue: 90
+  - name: Layer 1 - Ore B
+    use: 1
+    value: 0
+    onlyPositivePerlins: 0
+    range: {x: -200, y: -100}
+    feather: 70.6
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.158
+      amplitude: 0.55
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings:
+    - biomeID: 6
+      pairedValue: 21
+    - biomeID: 5
+      pairedValue: 21
+    - biomeID: 9
+      pairedValue: 44
+    - biomeID: 1
+      pairedValue: 53
+    - biomeID: 2
+      pairedValue: 59
+    - biomeID: 10
+      pairedValue: 66
+    - biomeID: 7
+      pairedValue: 72
+    - biomeID: 3
+      pairedValue: 77
+    - biomeID: 11
+      pairedValue: 81
+    - biomeID: 14
+      pairedValue: 4
+    - biomeID: 8
+      pairedValue: 4
+    - biomeID: 12
+      pairedValue: 4
+    - biomeID: 4
+      pairedValue: 4
+    - biomeID: 0
+      pairedValue: 90
+    - biomeID: 13
+      pairedValue: 90
+  - name: Layer 1 - Ore C
+    use: 1
+    value: 0
+    onlyPositivePerlins: 0
+    range: {x: -287, y: -200}
+    feather: 8.86
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.158
+      amplitude: 0.55
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings:
+    - biomeID: 6
+      pairedValue: 30
+    - biomeID: 5
+      pairedValue: 30
+    - biomeID: 9
+      pairedValue: 43
+    - biomeID: 1
+      pairedValue: 54
+    - biomeID: 2
+      pairedValue: 60
+    - biomeID: 10
+      pairedValue: 67
+    - biomeID: 7
+      pairedValue: 73
+    - biomeID: 3
+      pairedValue: 78
+    - biomeID: 11
+      pairedValue: 82
+    - biomeID: 14
+      pairedValue: 4
+    - biomeID: 8
+      pairedValue: 4
+    - biomeID: 12
+      pairedValue: 4
+    - biomeID: 4
+      pairedValue: 4
+    - biomeID: 0
+      pairedValue: 90
+    - biomeID: 13
+      pairedValue: 90
+  - name: Layer 1 - Spots
+    use: 1
+    value: 0
+    onlyPositivePerlins: 0
+    range: {x: -300, y: 0}
+    feather: 115.63
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 1
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.051
+      amplitude: 0.6
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.325
+      amplitude: 0.11
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings:
+    - biomeID: 6
+      pairedValue: 3
+    - biomeID: 9
+      pairedValue: 52
+    - biomeID: 1
+      pairedValue: 37
+    - biomeID: 2
+      pairedValue: 49
+    - biomeID: 5
+      pairedValue: 9
+    - biomeID: 10
+      pairedValue: 64
+    - biomeID: 7
+      pairedValue: 70
+    - biomeID: 3
+      pairedValue: 75
+    - biomeID: 11
+      pairedValue: 79
+    - biomeID: 14
+      pairedValue: 86
+    - biomeID: 8
+      pairedValue: 86
+    - biomeID: 12
+      pairedValue: 88
+    - biomeID: 4
+      pairedValue: 88
+    - biomeID: 0
+      pairedValue: 91
+    - biomeID: 13
+      pairedValue: 91
+  - name: Hardpan - Ore A
+    use: 1
+    value: 22
+    onlyPositivePerlins: 0
+    range: {x: -400, y: -300}
+    feather: 100
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.158
+      amplitude: 0.55
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Hardpan - Ore B
+    use: 1
+    value: 31
+    onlyPositivePerlins: 0
+    range: {x: -500, y: -400}
+    feather: 100
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.158
+      amplitude: 0.55
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Hardpan - Ore C
+    use: 1
+    value: 25
+    onlyPositivePerlins: 0
+    range: {x: -600, y: -500}
+    feather: 100
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.158
+      amplitude: 0.55
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Stone - Ore A
+    use: 1
+    value: 96
+    onlyPositivePerlins: 0
+    range: {x: -700, y: -600}
+    feather: 70
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.158
+      amplitude: 0.55
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Stone - Ore B
+    use: 1
+    value: 26
+    onlyPositivePerlins: 0
+    range: {x: -800, y: -700}
+    feather: 70
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.158
+      amplitude: 0.55
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 112
+    maxY: 191
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Stone - Ore C
+    use: 1
+    value: 33
+    onlyPositivePerlins: 0
+    range: {x: -900, y: -800}
+    feather: 70
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.185
+      amplitude: 0.55
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 4
+    maxY: 191
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Ruck - Ore A
+    use: 1
+    value: 27
+    onlyPositivePerlins: 0
+    range: {x: -1000, y: -900}
+    feather: 80
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.114
+      amplitude: 0.53
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.391
+      amplitude: 0.05
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 0
+    maxY: 189
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Ruck - Ore B
+    use: 1
+    value: 28
+    onlyPositivePerlins: 0
+    range: {x: -1100, y: -1000}
+    feather: 80
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.114
+      amplitude: 0.53
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.391
+      amplitude: 0.05
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 0
+    maxY: 97
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Ruck - Ore C
+    use: 1
+    value: 32
+    onlyPositivePerlins: 0
+    range: {x: -1200, y: -1100}
+    feather: 80
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.114
+      amplitude: 0.53
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.391
+      amplitude: 0.05
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Ruck - Diamonds
+    use: 1
+    value: 74
+    onlyPositivePerlins: 0
+    range: {x: -1200, y: -900}
+    feather: 100
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 1
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.047
+      amplitude: 0.54
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.341
+      amplitude: 0.15
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 0
+    maxY: 191
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Ruck - Lava
+    use: 1
+    value: 24
+    onlyPositivePerlins: 0
+    range: {x: -1200, y: -900}
+    feather: 100
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 1
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.047
+      amplitude: 0.54
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.341
+      amplitude: 0.14
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 1
+    sheetOffset: {x: 0, y: 0}
+    minY: 0
+    maxY: 191
+    preMadeSeed: 1496196574
+    biomeValuePairings: []
+  - name: Mantle - Ore A
+    use: 1
+    value: 34
+    onlyPositivePerlins: 0
+    range: {x: -1900, y: -1260}
+    feather: 0
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.331
+      amplitude: 0.53
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Mantle - Ore B
+    use: 1
+    value: 35
+    onlyPositivePerlins: 0
+    range: {x: -1900, y: -1600}
+    feather: 0
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.373
+      amplitude: 0.5
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Mantle - Ore C
+    use: 1
+    value: 36
+    onlyPositivePerlins: 0
+    range: {x: -1900, y: -1800}
+    feather: 0
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.373
+      amplitude: 0.5
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Core
+    use: 1
+    value: 29
+    onlyPositivePerlins: 0
+    range: {x: -2103, y: -1851}
+    feather: 4.58
+    featherSlope: 1
+    featherType: 1
+    constantFeatherRange: {x: -2011, y: -1937}
+    fadeType: 0
+    sheetOctaves: []
+    damplitude: 0.39
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 1744, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Surface
+    use: 1
+    value: 0
+    onlyPositivePerlins: 0
+    range: {x: -1, y: -1}
+    feather: 0
+    featherSlope: 1
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 0
+    sheetOctaves: []
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings:
+    - biomeID: 6
+      pairedValue: 2
+    - biomeID: 9
+      pairedValue: 4
+    - biomeID: 1
+      pairedValue: 10
+    - biomeID: 2
+      pairedValue: 55
+    - biomeID: 5
+      pairedValue: 12
+    - biomeID: 10
+      pairedValue: 61
+    - biomeID: 7
+      pairedValue: 68
+    - biomeID: 3
+      pairedValue: 5
+    - biomeID: 11
+      pairedValue: 14
+    - biomeID: 14
+      pairedValue: 4
+    - biomeID: 8
+      pairedValue: 4
+    - biomeID: 12
+      pairedValue: 4
+    - biomeID: 4
+      pairedValue: 4
+    - biomeID: 0
+      pairedValue: 90
+    - biomeID: 13
+      pairedValue: 90
+  - name: Layer 1 Holes
+    use: 1
+    value: 0
+    onlyPositivePerlins: 0
+    range: {x: -286, y: -44}
+    feather: 5
+    featherSlope: 0.31
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 1
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.023
+      amplitude: 0.6
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.069
+      amplitude: 0.13
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings:
+    - biomeID: 6
+      pairedValue: 8
+    - biomeID: 5
+      pairedValue: 8
+    - biomeID: 9
+      pairedValue: 39
+    - biomeID: 1
+      pairedValue: 50
+    - biomeID: 2
+      pairedValue: 8
+    - biomeID: 10
+      pairedValue: 8
+    - biomeID: 7
+      pairedValue: 69
+    - biomeID: 3
+      pairedValue: 41
+    - biomeID: 11
+      pairedValue: 83
+    - biomeID: 14
+      pairedValue: 39
+    - biomeID: 8
+      pairedValue: 39
+    - biomeID: 12
+      pairedValue: 39
+    - biomeID: 4
+      pairedValue: 39
+    - biomeID: 0
+      pairedValue: 95
+    - biomeID: 13
+      pairedValue: 95
+  - name: Hardpan Spaghetti
+    use: 1
+    value: 42
+    onlyPositivePerlins: 0
+    range: {x: -600, y: -299}
+    feather: 28.1
+    featherSlope: 0.5
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 1
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.019
+      amplitude: 1.01
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.04
+      amplitude: 0.19
+      offset: {x: 0, y: 0}
+    damplitude: 0.39
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 1744, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Hardpan Holes
+    use: 1
+    value: 42
+    onlyPositivePerlins: 0
+    range: {x: -600, y: -299}
+    feather: 5
+    featherSlope: 0.31
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 1
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.023
+      amplitude: 0.6
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.069
+      amplitude: 0.13
+      offset: {x: 0, y: 0}
+    damplitude: 0
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 2147483647
+    maxY: -2147483648
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Wiggly Stone Spaghetti
+    use: 1
+    value: 41
+    onlyPositivePerlins: 0
+    range: {x: -892, y: -630}
+    feather: 20
+    featherSlope: 0.35
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 1
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.019
+      amplitude: 1.01
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.082
+      amplitude: 0.19
+      offset: {x: 0, y: 0}
+    damplitude: 0.39
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 1744, y: 0}
+    minY: 59
+    maxY: 191
+    preMadeSeed: -1
+    biomeValuePairings: []
+  - name: Grainy Ruck Holes
+    use: 1
+    value: 40
+    onlyPositivePerlins: 0
+    range: {x: -1200, y: -900}
+    feather: 10
+    featherSlope: 0.13
+    featherType: 0
+    constantFeatherRange: {x: 0, y: 0}
+    fadeType: 1
+    sheetOctaves:
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.05
+      amplitude: 0.59
+      offset: {x: 0, y: 0}
+    - use: 1
+      biomePerlinBehaviour: 0
+      frequency: 0.199
+      amplitude: 0.2
+      offset: {x: 0, y: 0}
+    damplitude: 0.08
+    usePreviousSheetSeed: 0
+    sheetOffset: {x: 0, y: 0}
+    minY: 0
+    maxY: 139
+    preMadeSeed: -1
+    biomeValuePairings: []
+  biomeRequirements:
+  - label: Arctic Ocean
+    forBiomeID: 0
+    heightRange: {x: 0, y: 5}
+    temperatureRange: {x: 0, y: 7.5}
+    isBeach: 0
+  - label: Arctic Beach
+    forBiomeID: 13
+    heightRange: {x: 5, y: 6}
+    temperatureRange: {x: 0, y: 7.5}
+    isBeach: 0
+  - label: Snowlands
+    forBiomeID: 1
+    heightRange: {x: 6, y: 12.4}
+    temperatureRange: {x: 0, y: 7.5}
+    isBeach: 0
+  - label: Snowy Forest
+    forBiomeID: 2
+    heightRange: {x: 12.4, y: 18.4}
+    temperatureRange: {x: 0, y: 7.5}
+    isBeach: 0
+  - label: Mountains
+    forBiomeID: 3
+    heightRange: {x: 18.4, y: 20}
+    temperatureRange: {x: 0, y: 7.5}
+    isBeach: 0
+  - label: Regular Ocean
+    forBiomeID: 4
+    heightRange: {x: 0, y: 5}
+    temperatureRange: {x: 7.5, y: 12}
+    isBeach: 0
+  - label: Regular Beach
+    forBiomeID: 12
+    heightRange: {x: 5, y: 6}
+    temperatureRange: {x: 7.5, y: 12}
+    isBeach: 0
+  - label: Praries
+    forBiomeID: 5
+    heightRange: {x: 6, y: 10}
+    temperatureRange: {x: 7.5, y: 12}
+    isBeach: 0
+  - label: Forest
+    forBiomeID: 6
+    heightRange: {x: 10, y: 18.08}
+    temperatureRange: {x: 7.5, y: 12}
+    isBeach: 0
+  - label: Rockies
+    forBiomeID: 7
+    heightRange: {x: 18.08, y: 20}
+    temperatureRange: {x: 7.5, y: 12}
+    isBeach: 0
+  - label: Tropical Ocean
+    forBiomeID: 8
+    heightRange: {x: 0, y: 5}
+    temperatureRange: {x: 12, y: 20}
+    isBeach: 0
+  - label: Tropical Beach
+    forBiomeID: 14
+    heightRange: {x: 5, y: 6}
+    temperatureRange: {x: 12, y: 20}
+    isBeach: 0
+  - label: Desert
+    forBiomeID: 9
+    heightRange: {x: 6, y: 11}
+    temperatureRange: {x: 12, y: 20}
+    isBeach: 0
+  - label: Mediterranean
+    forBiomeID: 10
+    heightRange: {x: 11, y: 16.38}
+    temperatureRange: {x: 12, y: 20}
+    isBeach: 0
+  - label: Plats
+    forBiomeID: 11
+    heightRange: {x: 16.38, y: 20}
+    temperatureRange: {x: 12, y: 20}
+    isBeach: 0
